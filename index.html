@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SuprFleet Turning Point (prototype)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-name">SuprFleet Turning Point</span>
+      <span class="badge badge-demo">Prototype · fictional data</span>
+    </div>
+    <div class="controls">
+      <label for="preset">Example</label>
+      <select id="preset"></select>
+      <button type="button" id="reset" class="btn btn-quiet">Reset example</button>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Views">
+    <a href="#inputs" id="tab-inputs" class="tab">1. Inputs</a>
+    <a href="#comparison" id="tab-comparison" class="tab">2. Comparison</a>
+  </nav>
+
+  <main>
+    <section id="view-inputs" class="view" aria-labelledby="tab-inputs"></section>
+    <section id="view-comparison" class="view" aria-labelledby="tab-comparison" hidden></section>
+  </main>
+
+  <footer class="footer">Fictional demo data. Illustrative estimates, not market valuations.</footer>
+
+  <script src="js/engine.js"></script>
+  <script src="js/presets.js"></script>
+  <script src="js/explain.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
